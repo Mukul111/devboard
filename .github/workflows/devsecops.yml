@@ -1,0 +1,12 @@
+name: DevSecOps
+
+on:
+    push:
+        branches: [master]
+
+jobs:
+
+    ## ---- CI ----
+    # Code Stage 
+    code-quality:
+        uses: ./.github/workflows/code-quality.yml
